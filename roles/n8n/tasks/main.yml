@@ -1,0 +1,7 @@
+---
+
+- name: N8N | Podman
+  import_tasks: podman.yml
+
+- name: N8N | N8n
+  import_tasks: n8n.yml

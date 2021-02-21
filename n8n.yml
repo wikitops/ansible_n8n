@@ -1,0 +1,7 @@
+---
+
+- hosts: n8n
+  remote_user: vagrant
+  become: yes
+  roles:
+    - n8n

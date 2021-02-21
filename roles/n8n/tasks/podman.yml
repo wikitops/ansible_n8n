@@ -1,0 +1,13 @@
+---
+
+- name: N8N PODMAN | Create a network
+  containers.podman.podman_network:
+    name: n8n
+
+- name: N8N PODMAN | Create a pod
+  containers.podman.podman_pod:
+    name: n8n
+    network: n8n
+    state: started
+    ports:
+      - "5678:5678"
